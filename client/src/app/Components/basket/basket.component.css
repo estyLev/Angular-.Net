@@ -1,0 +1,179 @@
+#img1{
+  flex: 30%;
+  height: 50px;
+  /* width: 50px; */
+  order:2
+}
+.img1{
+  /* flex: 30%;
+  height: 50px; */
+  padding: 20px;
+  width: 50px;
+  /* order:1 */
+}
+.img2{
+  height: 60px;
+  width: 60px;
+}
+.prodInBasket{
+flex:100%;
+display: flex;
+flex-wrap: wrap;
+/* display: inline-block; */
+align-items: center;
+justify-content: space-around;
+flex-direction:row;
+font-size: 12px;
+background-color:rgba(187, 160, 124, 0.883);
+box-shadow:0 0 3px  rgb(90, 46, 14);
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 8px rgb(133, 79, 40), 0 0 5px rgb(43, 22, 7);;
+
+
+  /* margin: 20px; */
+
+}
+#conteiner{
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  flex-direction:row;
+}
+
+#basket{
+  flex: 25%;
+  height: 100%;
+  background-color:rgba(187, 160, 124, 0.883);
+  /* padding: 20px; */
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow:0 0 3px  rgb(90, 46, 14);
+  align-items: center;
+  text-align: center;
+
+
+
+  padding: 15px;
+}
+#products{
+  flex: 60%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction:row;
+
+}
+#sec{
+  flex: 60%;
+  order:1;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction:row;
+  border-style: double;
+  border-color: rgb(102, 50, 14); */
+}
+.input{
+  width:20px;
+ height: 20px;
+ background-color: rgba(243, 214, 173, 0.883);
+ color:rgb(90, 46, 14);
+}
+
+/* div{
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  box-shadow:0 0 3px  rgb(90, 46, 14);
+}
+
+
+div:hover{
+  box-shadow:0 0 10px  rgb(90, 46, 14);
+} */
+.prodInProd{
+  box-shadow:0 0 3px  rgb(90, 46, 14);
+  margin: 10px;
+  width: 80px;
+
+  padding: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(133, 79, 40), 0 0 5px rgb(43, 22, 7);
+  font-size: 10px;
+}
+.prodInProd:hover{
+  box-shadow:0 0 10px  rgb(90, 46, 14);
+}
+#header{
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 10px 40px black, 0 0 25px rgb(10, 5, 1), 0 0 5px rgb(90, 46, 14);
+
+  margin-left: 80px;
+}
+#footer{
+  margin-left: 80px;
+  margin-right: 80px;
+  color:rgb(90, 46, 14);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: rgb(90, 46, 14);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 100%;
+  height: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#f{
+  color:rgb(90, 46, 14)
+}
+.btn {
+  background-color:rgba(210, 180, 140, 0.883) ;
+  color: rgb(90, 46, 14);
+  border: 2px solid rgb(90, 46, 14);
+ width:70px;
+}
+
+.btn:hover {
+  background-color: rgb(90, 46, 14);
+  color: rgba(210, 180, 140, 0.883);
+}

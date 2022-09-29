@@ -1,0 +1,10 @@
+#submit{
+  background-color: rgba(210, 180, 140, 0.883);
+  color: rgb(90, 46, 14);
+  border-style: groove;
+  border-radius: 5px;
+}
+div{
+  text-align: center;
+  align-items:center;
+}

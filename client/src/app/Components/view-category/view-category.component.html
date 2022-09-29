@@ -1,0 +1,6 @@
+<br><br>
+<div *ngFor="let c of categorysList">
+  <input type="button" [value]="c.categoryName" (click)="route(c.categoryCode)" class="btn"/>
+</div>
+<br/><br/>
+<router-outlet></router-outlet>

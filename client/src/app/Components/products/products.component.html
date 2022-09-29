@@ -1,0 +1,15 @@
+<!-- <li><a routerLink="/viewCategory/basket/{{categoryCode}}" >basket</a> </li> -->
+<a routerLink="/viewCategory/basket/{{categoryCode}}">סל הקניות שלי</a>
+<br><br>
+<router-outlet></router-outlet>
+<div *ngFor="let p of categoryList">
+  <p>{{p.description}}</p>
+  <img [src]="p.picture" (dblclick)="viewProduct(p)" class="img" title="לפרטים נוספים">
+  <br><br>
+  <input type="button" value="הוסף לסל" (click)="addToBasket(p)"class="btn">
+</div>
+<div *ngIf="flag" id="snackbar">
+  <img [src]="currentProduct.picture" class="img">
+  <p>{{currentProduct.description}}</p>
+ <p>נוסף בהצלחה</p>
+</div>

@@ -1,0 +1,9 @@
+<div *ngFor="let c of Categorys">
+ <input type="button" value={{c.categoryName}} (click)="changeFlag(c)" class="btn">
+ </div>
+ <div *ngIf="flag">
+  <input type="text" placeholder="הכנס שם לעדכון" #name>
+  <input type="button" (click)="updateCategory(name.value)" value="אישור" class="btn">
+  </div>
+
+

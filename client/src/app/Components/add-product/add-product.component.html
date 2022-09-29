@@ -1,0 +1,20 @@
+<!-- קומפוננטה להוספת מוצר -->
+<form (ngSubmit)="addProduct()">
+  <input type="number" [(ngModel)]="newP.productCode" name="code" #code>
+  <label>   :הכנס קוד מוצר</label>
+  <br/><br/>
+  <input type="text"  [(ngModel)]="newP.productName" name="name" #name>
+  <label>   :הכנס שם מוצר</label>
+  <br/><br/>
+  <input type="text" [(ngModel)]="newP.description" name="description" #description>
+  <label>   :הכנס תאור עבור המוצר</label>
+  <br/><br/>
+  <input type="number" placeholder="הכנס קוד קטגוריה עבור המוצר" [(ngModel)]="newP.categoryCode" name="categoryCode" #categoryCode>
+  <label>:הכנס קוד קטגוריה עבור המוצר</label>
+  <br/><br/>
+  <input type="number"  [(ngModel)]="newP.cost" name="cost" #cost>
+  <label>:הכנס מחיר עבור מוצר</label>
+  <br/><br/>
+  <input type="submit" value="שלח">
+  </form>
+

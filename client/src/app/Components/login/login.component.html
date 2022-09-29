@@ -1,0 +1,26 @@
+<!-- <table border="1" padding="4">
+  <tr>
+      <th>UserCode</th>
+      <th>UserId</th>
+      <th>UserName</th>
+      <th>UserPhone</th>
+      <th>UserAddress</th>
+  </tr>
+  <tr *ngFor="let user of usersList">
+      <td>{{user.userCode}}</td>
+      <td>{{user.userId}}</td>
+      <td>{{user.userName}}</td>
+      <td>{{user.userPhone}}</td>
+      <td>{{user.userAddress}}</td>
+  </tr>
+</table> -->
+<br><br>
+<div>
+<form #myForm="ngForm" (ngSubmit)="checkUesr()">
+<input type="text" placeholder="הכנס את שמך" [(ngModel)]="currentUser.userName" name="name"/>
+<br/><br/>
+<input type="password" placeholder="הכנס סיסמא" [(ngModel)]="currentUser.userCode" name="password"/>
+<br/><br/>
+<input type="submit" value="סיים" id="submit"/>
+</form>
+</div>

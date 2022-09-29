@@ -1,0 +1,16 @@
+.btn {
+  background-color: rgb(90, 46, 14);
+  color:  rgba(210, 180, 140, 0.883);
+  border: 2px solid  rgba(156, 133, 104, 0.883);
+}
+
+.btn:hover {
+  background-color:  rgba(210, 180, 140, 0.883);
+  color:rgb(90, 46, 14);
+}
+div{
+  display: inline block;
+}
+body{
+  display: inline block;
+}

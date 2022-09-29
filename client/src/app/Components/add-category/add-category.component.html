@@ -1,0 +1,9 @@
+<!-- קומפוננטה להוספת קטגוריה -->
+<form (ngSubmit)="addCategory()">
+<input type="number" placeholder="הכנס קוד קטגוריה" [(ngModel)]="newCat.categoryCode" name="code" #code>
+<br/><br/>
+<input type="text" placeholder="הכנס שם קטגוריה" [(ngModel)]="newCat.categoryName" name="name" #name>
+<br/><br/>
+<input type="submit">
+</form>
+

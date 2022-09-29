@@ -1,0 +1,30 @@
+<div id="conteiner">
+      <div id="basket">
+            <p id="header">סל הקניות שלי</p>
+
+            <button class="button" style="vertical-align:middle" (click)="back()"><span>סגירה </span></button>
+            <div *ngFor="let b of myBasket" class="prodInBasket">
+                  <div id="img"><img [src]="b.picture" class="img1"/></div>
+                  <div id="sec">
+
+                      <p>{{b.price}} :מחיר ליחידה</p>
+                      <p>{{b.finalPrice}} :סה"כ מחיר עבור מוצר זה</p>
+                      <input type="button" value="-" (click)="decrease(b.productCode)" class="input"/>
+                      <input type="button" value={{b.amount}} disabled="true" class="input">
+                      <input type="button" value="+" (click)="increase(b.productCode)" class="input"/>
+                  </div>
+            </div>
+            <p id="footer">סה"כ לתשלום:{{finalPrice}}</p>
+            <a routerLink="/finishPurchase" id="f">לתשלום</a>
+      </div>
+
+    <div id="products">
+      <div *ngFor="let p of productsList" class="prodInProd">
+        <p>{{p.description}}</p>
+        <img [src]="p.picture" (dblclick)="viewProduct(p)" class="img2"  title="לפרטים נוספים">
+        <br><br>
+        <input type="button" value="הוסף לסל" (click)="addToBasket(p)" class="btn">
+    </div>
+    </div>
+
+</div>

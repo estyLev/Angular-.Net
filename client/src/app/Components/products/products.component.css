@@ -1,0 +1,79 @@
+.img{
+  height: 100px;
+  width: 100px;
+}
+
+div{
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  box-shadow:0 0 3px  rgb(90, 46, 14);
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(133, 79, 40), 0 0 5px rgb(43, 22, 7);
+  font-size: 10px;
+}
+
+
+div:hover{
+  box-shadow:0 0 10px  rgb(90, 46, 14);
+  background-color: rgba(229, 214, 192, 0.883);
+
+
+}
+#snackbar {
+  visibility: visible;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 7px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 5px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+a{
+  color:rgb(90, 46, 14);
+  margin-left:2%;
+}
+
+.btn {
+  background-color:rgba(210, 180, 140, 0.883) ;
+  color: rgb(90, 46, 14);
+  border: 2px solid rgb(90, 46, 14);
+ width:70px;
+}
+
+.btn:hover {
+  background-color: rgb(90, 46, 14);
+  color: rgba(210, 180, 140, 0.883);
+}

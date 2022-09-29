@@ -1,0 +1,7 @@
+<br><br>
+<div class="container">
+  <div class="box" *ngFor="let p of products">
+    <p>{{p.description}}</p>
+    <img class="img" [src]="p.picture"/>
+  </div>
+</div>

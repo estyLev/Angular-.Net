@@ -1,0 +1,105 @@
+{% comment %} import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { myRoutingModule } from './myRouting.routing'
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import {
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatDatepicker,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatOptionModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatGridListModule,
+  MatSlideToggleModule,ErrorStateMatcher,ShowOnDirtyErrorStateMatcher, MatTableModule
+} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {AboutComponent} from './Components/about/about.component'
+import {AddCategoryComponent} from './Components/add-category/add-category.component'
+import {AddProductComponent} from './Components/add-product/add-product.component'
+import {BasketComponent} from './Components/basket/basket.component'
+import {FinishPurchaseComponent} from './Components/finish-purchase/finish-purchase.component'
+import {HonePageComponent} from './Components/hone-page/hone-page.component'
+import {LoginComponent} from './Components/login/login.component'
+import {ManagerPageComponent} from './Components/manager-page/manager-page.component'
+import {ProductComponent} from './Components/Product/product.component'
+import {ProductsComponent} from './Components/products/products.component'
+import {RegisterComponent} from './Components/register/register.component'
+import {UpdateCategoryComponent} from './Components/update-category/update-category.component'
+import {UpdateProductComponent} from './Components/update-product/update-product.component'
+import {ViewProductsComponent} from './Components/view-products/view-products.component'
+import { AdvertisementComponent } from './Components/advertisement/advertisement.component';
+import { RoomsComponent } from './Components/rooms/rooms.component';
+import { SofasComponent } from './Components/sofas/sofas.component';
+import { ChairsComponent } from './Components/chairs/chairs.component';
+import { TablesComponent } from './Components/tables/tables.component';
+import { BadsComponent } from './Components/bads/bads.component';
+import { BedsComponent } from './Components/beds/beds.component'
+
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AboutComponent,
+    AddCategoryComponent,
+    AddProductComponent,
+    FinishPurchaseComponent,
+    HonePageComponent,
+    BasketComponent,
+    LoginComponent,
+    ManagerPageComponent,
+    ProductComponent,
+    ProductsComponent,
+    RegisterComponent,
+    UpdateCategoryComponent,
+    UpdateProductComponent,
+    ViewProductsComponent,
+    AdvertisementComponent,
+    RoomsComponent,
+    SofasComponent,
+    ChairsComponent,
+    TablesComponent,
+    BadsComponent,
+    BedsComponent
+  ],
+  imports: [
+    BrowserModule,RouterModule, myRoutingModule,HttpClientModule,FormsModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatSlideToggleModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatGridListModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { } {% endcomment %}

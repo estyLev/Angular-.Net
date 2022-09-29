@@ -1,0 +1,43 @@
+<!-- <form>
+<input type="text" placeholder="הכנס תעודת זהות"/>
+<br>
+<input type="text" placeholder="הכנס שם"/>
+<input type="text" placeholder="הכנס מספר טלפון"/>
+<input type="text" placeholder="הכנס כתובת"/>
+</form> -->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" (ngSubmit)="addUesr()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" (click)="back()">&times;</span>
+      <img src="../../../assets/woman.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Id</b></label>
+      <input type="number" placeholder="Enter Id" name="uname" id="Username" [(ngModel)]="newUser.userId" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="Password" [(ngModel)]="newUser.userCode" required>
+
+      <label for="psw"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="Username" id="Name" [(ngModel)]="newUser.userName">
+
+      <label for="psw"><b>Phone</b></label>
+      <input type="text" placeholder="Enter Phone" name="phone" id="Phone" [(ngModel)]="newUser.userPhone">
+
+      <label for="psw"><b>Address</b></label>
+      <input type="text" placeholder="Enter Address" name="ads" id="Address" [(ngModel)]="newUser.userAddress">
+
+      <button type="submit">Login</button>
+      <!-- <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label> -->
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+
+    </div>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+<!-- <div id="prodact">
+  <img [src]="currentProduct.picture" id="img"/>
+   <p>{{currentProduct.description}}</p>
+</div> -->
+
+<div id="myModal" class="modal">
+  <span class="close" (click)="back()">&times;</span>
+  <img class="modal-content"  [src]="currentProduct.picture">
+  <div class="caption">
+    <p class="p">{{currentProduct.description}}</p>
+    <p class="p"> מחיר: {{currentProduct.cost}}</p>
+  </div>
+
+</div>
+
+
+
